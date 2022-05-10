@@ -8,4 +8,9 @@ class ParamsController < ApplicationController
     phrase = params[:phrase]
     render json: { phrase: phrase }
   end
+
+  def update_body
+    phrase = params[:phrase]
+    render json: { phrase: phrase }
+  end
 end
