@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  get "/query/:phrase", controller: "params", action: "show_query"
+  get "/query/", controller: "params", action: "show_query"
   get "/segment/:phrase", controller: "params", action: "show_segment"
   post "/body/:phrase", controller: "params", action: "update_body"
 end
